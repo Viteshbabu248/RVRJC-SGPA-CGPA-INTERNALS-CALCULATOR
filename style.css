@@ -49,5 +49,5 @@ body {
         @media screen and (max-width: 600px) 
         {
             body{display:grid;}
-            d1,.d2,.d3{width:300px;margin-bottom:50px;margin-top:50px;}
+            .d1,.d2,.d3{width:300px;margin-bottom:50px;margin-top:50px;}
         }
