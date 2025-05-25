@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INERNALS,CGPA,SGPA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+        <div class="d1">
+            <h1>INTERNALS CALCULATOR</h1>
+            <table class="t1">
+                <tr>
+                    <td>Sessional-1 marks : </td>
+                    <td><input type="number" id="ses1" min="0" max="18"></td>
+                </tr>
+                <tr>
+                    <td>sessional-2 marks : </td>
+                    <td><input type="number" id="ses2" min="0" max="18"></td>
+                </tr>
+                <tr>
+                    <td>Assignment-1 marks : </td>
+                    <td><input type="number" id="ass1" min="0" max="12"></td>
+                </tr>
+                <tr>
+                    <td>Assignment-2 marks : </td>
+                    <td><input type="number" id="ass2" min="0" max="12"></td>
+                </tr>
+                <tr>
+                    <td>Quiz-1 marks : </td>
+                    <td><input type="number" id="qu1" min="0" max="12"></td>
+                </tr>
+                <tr>
+                    <td>Quiz-2 marks : </td>
+                    <td><input type="number" id="qu2" min="0" max="12"></td>
+                </tr>
+                <tr>
+                    <td>Attendance(%) : </td>
+                    <td>
+                    <select id="att">
+                        <option value="ge90">&gt=90</option>
+                        <option value="85-89">85-89</option>
+                        <option value="80-84">80-84</option>
+                        <option value="75-79">75-79</option>
+                        <option value="le74">&lt=74</option>
+                    </select>
+                    </td>
+                </tr>
+            </table><br>
+            <button onclick="internals()" class="sub1">CALCULATE</button><br>
+            <p id="res1"></p>
+        </div>
+        <div class="d2">
+            <h1>SGPA CALCULATOR</h1>
+            <table class="t2">
+                <tr>
+                    <td>Sub-1 grade : </td>
+                    <td><select id="sub1">
+                        <option value="A+">A+</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                        </select>
+                    </td>
+                    <td>Sub-1 credits : </td>
+                    <td><input type="number" id="sub1c" step="0.1" min="0" max="20"></td>
+                </tr>
+                <tr>
+                    <td>Sub-2 grade : </td>
+                    <td><select id="sub2">
+                        <option value="A+">A+</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                        </select>
+                    </td>
+                    <td>Sub-2 credits : </td>
+                    <td><input type="number" id="sub2c" step="0.1" min="0" max="20"></td>
+                </tr>
+                <tr>
+                    <td>Sub-3 grade : </td>
+                    <td><select id="sub3">
+                        <option value="A+">A+</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                        </select>
+                    </td>
+                    <td>Sub-3 credits : </td>
+                    <td><input type="number" id="sub3c" step="0.1" min="0" max="20"></td>
+                </tr>
+                <tr>
+                    <td>Sub-4 grade : </td>
+                    <td><select id="sub4">
+                        <option value="A+">A+</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                        </select>
+                    </td>
+                    <td>Sub-4 credits : </td>
+                    <td><input type="number" id="sub4c" step="0.1" min="0" max="20"></td>
+                </tr>
+                <tr>
+                    <td>Sub-5 grade : </td>
+                    <td><select id="sub5">
+                        <option value="A+">A+</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                        </select>
+                    </td>
+                    <td>Sub-5 credits : </td>
+                    <td><input type="number" id="sub5c" step="0.1" min="0" max="20"></td>
+                </tr>
+                <tr>
+                    <td>Sub-6 grade : </td>
+                    <td><select id="sub6">
+                        <option value="A+">A+</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                        </select>
+                    </td>
+                    <td>Sub-6 credits : </td>
+                    <td><input type="number" id="sub6c" step="0.1" min="0" max="20"></td>
+                </tr>
+                <tr>
+                    <td>Sub-7 grade : </td>
+                    <td><select id="sub7">
+                        <option value="A+">A+</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                        </select>
+                    </td>
+                    <td>Sub-7 credits : </td>
+                    <td><input type="number" id="sub7c" step="0.1" min="0" max="20"></td>
+                </tr>
+                <tr>
+                    <td>Lab-1 grade : </td>
+                    <td><select id="lab1">
+                        <option value="A+">A+</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                        </select>
+                    </td>
+                    <td>Lab-1 credits : </td>
+                    <td><input type="number" id="lab1c" step="0.1" min="0" max="20"></td>
+                </tr>
+                <tr>
+                    <td>Lab-2 grade : </td>
+                    <td><select id="lab2">
+                        <option value="A+">A+</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                        </select>
+                    </td>
+                    <td>Lab-2 credits : </td>
+                    <td><input type="number" id="lab2c" step="0.1" min="0" max="20"></td>
+                </tr>
+                <tr>
+                    <td>Lab-3 grade : </td>
+                    <td><select id="lab3">
+                        <option value="A+">A+</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                        </select>
+                    </td>
+                    <td>Lab-3 credits : </td>
+                    <td><input type="number" id="lab3c" step="0.1" min="0" max="20"></td>
+                </tr>
+                <tr>
+                    <td>Lab-4 grade : </td>
+                    <td><select id="lab4">
+                        <option value="A+">A+</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                        </select>
+                    </td>
+                    <td>Lab-4 credits : </td>
+                    <td><input type="number" id="lab4c" step="0.4" min="0" max="20"></td>
+                </tr>
+                <tr>
+                    <td>Lab-5 grade : </td>
+                    <td><select id="lab5">
+                        <option value="A+">A+</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                        </select>
+                    </td>
+                    <td>Lab-5 credits : </td>
+                    <td><input type="number" id="lab5c" step="0.1" min="0" max="20"></td>
+                </tr>
+                
+            </table><br>
+            <button onclick="SGPA()" class="sub2">CALCULATE</button><br>
+            <p id="res2"></p>
+
+        </div>
+        <div class="d3">
+            <h1>CGPA CALCULATOR</h1>
+            <table class="t3">
+                <tr>
+                    <td>Semester-1 SGPA : </td>
+                    <td><input type="number" id="sem1" step="0.001" min="0" max="10"></td>
+                </tr>
+                <tr>
+                    <td>Semester-2 SGPA : </td>
+                    <td><input type="number" id="sem2" step="0.001" min="0" max="10"></td>
+                </tr>
+                <tr>
+                    <td>Semester-3 SGPA : </td>
+                    <td><input type="number" id="sem3" step="0.001" min="0" max="10"></td>
+                </tr>
+                <tr>
+                    <td>Semester-4 SGPA : </td>
+                    <td><input type="number" id="sem4" step="0.001" min="0" max="10"></td>
+                </tr>
+                <tr>
+                    <td>Semester-5 SGPA : </td>
+                    <td><input type="number" id="sem5" step="0.001" min="0" max="10"></td>
+                </tr>
+                <tr>
+                    <td>Semester-6 SGPA : </td>
+                    <td><input type="number" id="sem6" step="0.001" min="0" max="10"></td>
+                </tr>
+                <tr>
+                    <td>Semester-7 SGPA : </td>
+                    <td><input type="number" id="sem7" step="0.001" min="0" max="10"></td>
+                </tr>
+                <tr>
+                    <td>Semester-8 SGPA : </td>
+                    <td><input type="number" id="sem8" step="0.001" min="0" max="10"></td>
+                </tr>
+            </table><br>
+            <button onclick="CGPA()" class="sub3">CALCULATE</button><br>
+            <p id="res3"></p>
+
+        </div>
+   
+    <script src="scores.js"></script>
+</body>
+</html>
