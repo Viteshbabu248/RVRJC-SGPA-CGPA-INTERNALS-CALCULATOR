@@ -14,3 +14,4 @@ This tool is designed according to the academic guidelines of **RVR JC COLLEGE O
 - Credit-based grade system
 - Internal marks breakdown (e.g., assignments, quizes, attendance)
 - Semester-wise grade input
+<img width="719" height="400" alt="image" src="https://github.com/user-attachments/assets/c77b7c91-dbcd-4a23-9eeb-b0eab02a8010" />
