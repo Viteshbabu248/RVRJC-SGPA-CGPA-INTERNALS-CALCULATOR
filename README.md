@@ -26,7 +26,7 @@ This tool is designed according to the academic guidelines of **RVR JC College o
 ## 📂 Project Structure
 ```bash
 RVRJC-SGPA-CGPA-INTERNALS-CALCULATOR/
-│── src/              # Main source code
-│── data/             # Sample data (if any)
-│── requirements.txt  # Dependencies
-│── README.md         # Project documentation
+│── src/              
+│── data/             
+│── requirements.txt  
+│── README.md         
